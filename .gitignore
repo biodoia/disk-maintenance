@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+*.swo
+
+# local copies
+/etc/disk-maintenance.conf

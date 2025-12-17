@@ -1,0 +1,6 @@
+[Unit]
+Description=disk-maintenance (guarded cleanup)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/disk-maintenance cleanup

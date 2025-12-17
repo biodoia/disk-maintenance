@@ -1,0 +1,28 @@
+# disk-maintenance configuration
+# Copy to /etc/disk-maintenance.conf and edit.
+
+# Thresholds
+CLEANUP_THRESHOLD_PCT=85
+EMERGENCY_THRESHOLD_PCT=95
+EMERGENCY_MIN_FREE_BYTES=$((1024*1024*1024)) # 1 GiB
+
+# Journald vacuum targets
+JOURNAL_VACUUM_CLEANUP=200M
+JOURNAL_VACUUM_EMERGENCY=50M
+
+# Coredumps
+COREDUMP_RETENTION_DAYS=14
+
+# Snap cleanup
+SNAP_CLEANUP_ENABLED=1
+SNAP_REFRESH_RETAIN=2
+
+# Docker cleanup
+DOCKER_PRUNE_ENABLED=1
+DOCKER_VOLUME_PRUNE_ENABLED=0
+
+# Headless agent triage (optional)
+# Values: none | codex | opencode
+AGENT_CLI=codex
+# Values: json | plain
+AGENT_OUTPUT=json

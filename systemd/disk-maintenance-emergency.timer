@@ -1,0 +1,11 @@
+[Unit]
+Description=disk-maintenance emergency timer
+
+[Timer]
+OnBootSec=10m
+OnUnitActiveSec=15m
+RandomizedDelaySec=2m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=disk-maintenance (learning/report)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/disk-maintenance report

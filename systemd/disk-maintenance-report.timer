@@ -1,0 +1,10 @@
+[Unit]
+Description=disk-maintenance report timer
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=10m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

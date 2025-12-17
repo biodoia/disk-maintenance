@@ -1,0 +1,6 @@
+[Unit]
+Description=disk-maintenance (emergency)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/disk-maintenance emergency
