@@ -14,6 +14,13 @@ sudo ./install.sh
 ## Configure
 Edit `/etc/disk-maintenance.conf`.
 
+Recommended knobs:
+- `CLEANUP_THRESHOLD_PCT` (default 85)
+- `EMERGENCY_THRESHOLD_PCT` (default 95)
+- `EMERGENCY_MIN_FREE_BYTES` (default 1 GiB)
+- `EMERGENCY_WEBHOOK_URL` (optional)
+- `AGENT_CLI` (`codex` or `opencode` or `none`)
+
 ## Manual runs
 ```sh
 sudo /usr/local/sbin/disk-maintenance report

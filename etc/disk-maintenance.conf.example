@@ -26,3 +26,10 @@ DOCKER_VOLUME_PRUNE_ENABLED=0
 AGENT_CLI=codex
 # Values: json | plain
 AGENT_OUTPUT=json
+
+# Optional emergency notification (best-effort)
+# EMERGENCY_WEBHOOK_URL="https://example.com/webhook"
+EMERGENCY_WEBHOOK_URL=
+
+# Optional: history rotation
+HISTORY_MAX_BYTES=$((10*1024*1024))
